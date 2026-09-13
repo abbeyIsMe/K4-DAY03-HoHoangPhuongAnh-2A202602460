@@ -213,10 +213,10 @@ class OpenAIProvider(BaseLLMProvider):
 
 def get_llm_provider() -> BaseLLMProvider:
     """Factory function khởi tạo Provider theo LLM_PROVIDER env variable"""
-    provider_type = os.getenv("LLM_PROVIDER", "gemini").lower()
+    provider_type = os.getenv("LLM_PROVIDER", "groq").lower()
     
-    if provider_type == "gemini":
-        key = os.getenv("GEMINI_API_KEY")
+    if provider_type == "groq":
+        key = os.getenv("GROQ_API_KEY")
         if key and key != "your_gemini_api_key_here":
             return GeminiProvider()
         else:

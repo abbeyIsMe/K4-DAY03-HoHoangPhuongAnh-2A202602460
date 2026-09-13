@@ -29,7 +29,7 @@
     {
         "id": "TC05",
         "type": "edge_case_handling",
-        "question": "Hãy tra cứu thông tin học vụ của sinh viên có mã SV9999999",
+        "question": "Hãy tra cứu trạng thái học của sinh viên có mã SV8889888888.",
         "expected_behavior": "Agent nhận kết quả NOT_FOUND từ Tool và đưa ra phản hồi lịch sự, chính xác không bịa đặt dữ liệu.",
         "complexity": "Medium"
     }
